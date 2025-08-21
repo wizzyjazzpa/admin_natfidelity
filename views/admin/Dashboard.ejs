@@ -48,9 +48,7 @@
 													<button type="submit" class=" btn btn-primary" >Uplaod Programs</button>
 											       </form>
 												</div><!-- end of hold form-->
-												<div class="mb-0">
-													<span class="text-muted">this part is not functioning yet</span>
-												</div><!-- end of muted text form-->
+												
 											</div>
 												
 											</div>
@@ -115,21 +113,12 @@
 											<div class="card-body">
 												<div class="row">
 													<div class="col mt-0">
-														<h5 class="card-title">Upcoming Events Upload</h5>
+														<h5 class="card-title">Debit Transaction</h5>
 													</div>
 
-													 <div x-data="upcoming_form()">
-													<p x-text="upcoming_msg" style="color:forestgreen"></p>
-													<form @submit.prevent="submitUpcomingForm"   enctype="multipart/form-data">
-												    <input type="text" class="form-control" x-model="upcoming_heading"  placeholder="Heading Here ..." required style="margin-bottom:2%">
-													<input type="text" class="form-control" x-model="uptime"  placeholder="Event Time Here e.g(8:30 - 9:00AM)" required style="margin-bottom:2%">
-													<input type="date" class="form-control" x-model="update" id="heading" placeholder="Date Here ..."  style="margin-bottom:2%">
-													<input type="file" @change="handleupcomingFile" accept="image/*" class="form-control" style="margin-top:2%; margin-bottom:2%" >
-													<button type="submit" class=" btn btn-primary" >Uplaod Programs</button>
-											       </form>
-												</div><!-- end of hold form-->
+													
 												<div class="mb-0">
-													<span class="text-muted">maximum file size 1mb</span>
+													<span class="text-muted">Upcoming update on transactions</span>
 												</div><!-- end of muted text form-->
 											</div>
 										</div>
@@ -149,7 +138,7 @@
 
 									<h5 class="card-title mb-0">Volunteers</h5>
 								</div>
-								<table class="table table-hover my-0">
+								<!--<table class="table table-hover my-0">
 									<thead>
 										<tr>
 											<th>Name</th>
@@ -217,7 +206,7 @@
 											<td class="d-none d-md-table-cell">William Harris</td>
 										</tr>
 									</tbody>
-								</table>
+								</table>-->
 							</div>
 						</div>
 					</div>
