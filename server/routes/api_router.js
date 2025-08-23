@@ -19,4 +19,6 @@ router.post('/createAccount',api_routes.createAcount)
 router.post('/updatebalance',api_routes.updateBalance);
 router.post('/updatebank',api_routes.uploadBank);
 router.get('/search_balance/:accountNumber',api_routes.search_balance);
+router.get('/getaccounts',api_routes.getAcountDetails);
+router.post('deleteaccount/:id',api_routes.deleteAccount);
 module.exports = router
