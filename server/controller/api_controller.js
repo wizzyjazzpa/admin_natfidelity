@@ -287,4 +287,27 @@ exports.updateBalance = async(req,res)=>{
       
  }
 
+ 
+ exports.getAcountDetails = async(req,res)=>{
+      await Account_Model.find()
+     .then(result=>{
+          if(result){
+               res.json(result);
+          }else{
+                 res.json({message:"No Data Yet"})
+          }
+     }).catch(err=>{
+         res.status(500).json({error:err.message});
+     })
+
+        
+ }
+ exports.deleteAccount = async(req,res)=>{
+      const id = req.params.id
+      console.log(id)
+ }
+
+    
+
+
     
