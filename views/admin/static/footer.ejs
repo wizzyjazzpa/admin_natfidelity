@@ -469,6 +469,41 @@
           $("#emailInput").val("");
         }
       }
+					 function getaccount(){
+		   $.ajax({
+                    url:"/api/getaccounts",
+					method:"GET",
+					success:function(data){
+					   let rows="";
+					   let count =0;
+						data.forEach(user => {
+							count = count+1
+							rows +=`
+							     <tr>
+											<td><span class="d-xl-table-cell">${user.account_number}</span></td>
+											<td class=" d-xl-table-cell">${user.account_name}</td>
+											<td>
+												<a class='btn btn-danger' href='#'>Delete</a>
+												</td>
+											
+									</tr>
+							
+							`;
+							
+						});
+						$("#account_table tbody").html(rows);
+					}
+		   });
+	  }
+	  	 $("#delete_form").on('submit',function(e){
+		  e.preventDefault();
+		   let account_id =  $("#account_id").val();
+		  alert($account_id)
+
+
+	  });
+
+	  getaccount();
 
 	});
 	</script>
